@@ -46,7 +46,7 @@ const go = function () {
     .then(res => {
       if (res.choice) {
         console.log(res)
-        licenseLink(res.license)
+        licenseBadges(res.license)
         console.log(licenseBadge)
 
       }
@@ -58,13 +58,13 @@ const go = function () {
     .catch(err => { console.log(err) })
 }
 
-const licenseLink = (license) => {
+const licenseBadges = (license) => {
   switch (license) {
     case 'MIT':
-      licenseBadge = `[MIT](https://opensource.org/licenses/MIT)`
+      licenseBadge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
       break;
     case 'Apache2.0':
-      licenseBadge = `[Apache2.0](https://opensource.org/licenses/Apache-2.0)`
+      licenseBadge = `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0))`
       break;
     case 'The Unlicensed':
       licenseBadge = `[The Unlicensed](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`
