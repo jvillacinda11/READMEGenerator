@@ -1,5 +1,5 @@
 # READMEGenerator
-
+[MIT](https://opensource.org/licenses/MIT)
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)

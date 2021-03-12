@@ -1,5 +1,6 @@
 const fs = require('fs')
 const { prompt } = require('inquirer')
+let licenseBadge = ''
 
 const go = function () {
 
@@ -31,9 +32,6 @@ const go = function () {
       message: 'Enter your gif location.'
     },
     {
-
-    },
-    {
       type: 'list',
       name: 'license',
       choices: ['MIT', 'Apache2.0', 'The Unlicensed', 'ZLib']
@@ -49,6 +47,7 @@ const go = function () {
       if (res.choice) {
         console.log(res)
         licenseLink(res.license)
+        console.log(licenseBadge)
 
       }
       else {
@@ -60,39 +59,30 @@ const go = function () {
 }
 
 const licenseLink = (license) => {
-  let licenseLink = ''
   switch (license) {
     case 'MIT':
-      licenseLink = `[MIT](https://opensource.org/licenses/MIT)`
+      licenseBadge = `[MIT](https://opensource.org/licenses/MIT)`
       break;
     case 'Apache2.0':
-      licenseLink = `[Apache2.0](https://opensource.org/licenses/Apache-2.0)`
+      licenseBadge = `[Apache2.0](https://opensource.org/licenses/Apache-2.0)`
       break;
     case 'The Unlicensed':
-      licenseLink = `[The Unlicensed](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`
+      licenseBadge = `[The Unlicensed](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`
       break;
     case 'ZLib':
-      licenseLink = `[ZLib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)](https://opensource.org/licenses/Zlib)`
+      licenseBadge = `[ZLib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)](https://opensource.org/licenses/Zlib)`
       break;
   }
-  return licenseLink
+  return licenseBadge
 }
 
-const fillout = () =>{
-let md = `
+const fillout = () => {
+  let md = `
 # ${res.projectTitle}
 
 ## Table of Contents
 
 
-
-
-
 `
 }
-
 go()
-//MIT [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-//Apache2.0 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-//The Unlicensed[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
-//ZLib [![License: Zlib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)](https://opensource.org/licenses/Zlib)
