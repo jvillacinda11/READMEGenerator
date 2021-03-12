@@ -20,6 +20,10 @@ This CLI app is designed to make creating a README.md easier by doing all the fo
 To install this app first clone the repository from this page. This app does require that you have Node Js and the npm 'inquirer' installed.  To download Node Js click [here](https://nodejs.org/en/download/). Once you have downloaded Node Js and cloned the repo into your computer, type `npm i inquirer` into your terminal.
 
 ## Usage
+
+### Demo:
+
+
 ![](./test.gif)
 
 
