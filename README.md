@@ -24,7 +24,7 @@ To install this app first clone the repository from this page. This app does req
 ### Demo:
 
 
-![](./demo.gif)
+![](./demonstration.gif)
 
 
 From your code editor open a terminal and enter `node index.js`. This will run the program.  Fill out all the following prompts and at the end you will be asked to confirm your choices. If you made a mistake enter `n` and you will be taken back to the beginning to make any corrections. Once you confirm all your choices, the console will print `README1.md had been created`. Your readme has been created! to make it your default delete your old README.md and and delete the '1' from your generated README.
