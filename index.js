@@ -1,6 +1,10 @@
 const fs = require('fs')
 const { prompt } = require('inquirer')
+const license = require('./license.js')
+const fillout = require('./filllout.js')
 let licenseBadge = ''
+let licenseLink = ''
+let md = ''
 
 const go = function () {
 
@@ -46,8 +50,16 @@ const go = function () {
     .then(res => {
       if (res.choice) {
         console.log(res)
-        licenseBadges(res.license)
+        licenseBadge = license.licenseBadges(res.license)
         console.log(licenseBadge)
+        licenseLink = license.licenseLinks(res.license)
+        console.log(licenseLink)
+        md = fillout(res, licenseLink, licenseBadge)
+        console.log(md)
+        fs.writeFile('readmetest.md', md, function (err) {
+          if (err) return console.log(err);
+          console.log('it works!');
+        })
 
       }
       else {
@@ -58,31 +70,5 @@ const go = function () {
     .catch(err => { console.log(err) })
 }
 
-const licenseBadges = (license) => {
-  switch (license) {
-    case 'MIT':
-      licenseBadge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
-      break;
-    case 'Apache2.0':
-      licenseBadge = `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0))`
-      break;
-    case 'The Unlicensed':
-      licenseBadge = `[The Unlicensed](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`
-      break;
-    case 'ZLib':
-      licenseBadge = `[ZLib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)](https://opensource.org/licenses/Zlib)`
-      break;
-  }
-  return licenseBadge
-}
 
-const fillout = () => {
-  let md = `
-# ${res.projectTitle}
-
-## Table of Contents
-
-
-`
-}
 go()
