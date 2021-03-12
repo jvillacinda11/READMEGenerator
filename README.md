@@ -5,16 +5,16 @@
 
 ## Description
 
-This CLI app is designed to make creating a README.md easier by doing all the formatting for you. All you have to do is complete all the prompts and the app will allocate the information accordingly.
+This CLI app is designed to make creating a README.md easier by doing all the formatting for you. All you have to do is complete all the prompts and the app will allocate the information accordingly into a format that is like this README.
 
 
 ## Table of Contents
-- [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
 - [License](#license)
-
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
 ## Installation
 To install this app first clone the repository from this page. This app does require that you have Node Js and the npm 'inquirer' installed.  To download Node Js click [here](https://nodejs.org/en/download/). Once you have downloaded Node Js and cloned the repo into your computer, type `npm i inquirer` into your terminal.
