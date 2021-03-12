@@ -8,55 +8,10 @@
 
 
 ## Installation
-a
 
-a
-
-a
-
-a
-
-a
-
-a
-
-a
 
 ## Usage
-
-a
-
-a
-
-a
-
-a
-
-a
-
-a
-
-a
-
-a
-
-
+![](./test.gif)
 ## Credits
 
-a
-
-a
-
-a
-
-a
-
-a
-
-a
-
-a
-
-a
 ## License
-[MIT](https://opensource.org/licenses/MIT)
