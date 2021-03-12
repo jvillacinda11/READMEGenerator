@@ -54,7 +54,7 @@ const go = function () {
         console.log(licenseBadge)
         licenseLink = license.licenseLinks(res.license)
         console.log(licenseLink)
-        md = fillout(res, licenseLink, licenseBadge)
+        md = fillout(res, licenseBadge, licenseLink)
         console.log(md)
         fs.writeFile('readmetest.md', md, function (err) {
           if (err) return console.log(err);

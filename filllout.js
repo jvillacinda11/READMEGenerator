@@ -1,6 +1,6 @@
 const fillout = (res, licenseBadge, licenseLink) => {
-  let md = `
-# ${res.projectTitle}
+  let md =
+    `# ${res.projectTitle}
  ${licenseBadge}
 ## Table of Contents
 - [Installation](#installation)
