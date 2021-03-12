@@ -53,7 +53,7 @@ const go = function () {
     {
       type: 'input',
       name: 'email',
-      message: 'Enter your email...'
+      message: 'Enter your email.'
     },
     {
       type: 'input',
@@ -63,7 +63,7 @@ const go = function () {
     {
       type: 'input',
       name: 'repo',
-      message: 'Enter your project repository name'
+      message: 'Enter your project repository name.'
     },
     {
       type: 'confirm',

@@ -56,9 +56,3 @@ My Github profile is [${res.github}](https://github.com/${res.github})
   return md;
 }
 module.exports = fillout
-// ${res.description}
-// ${res.solve}
-// ${res.install}
-// ${res.gif}
-// ${licenseBadge}
-// ${licenseLink}
