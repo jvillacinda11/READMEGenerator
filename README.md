@@ -1,6 +1,6 @@
 # READMEGenerator
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![GitHub last commit](https://img.shields.io/github/last-commit/jvillacinda11/READMEGenerator?style=flat)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/jvillacinda11/READMEGenerator)
 
 
 ## Description
@@ -21,6 +21,8 @@ To install this app first clone the repository from this page. This app does req
 
 ## Usage
 ![](./test.gif)
+
+
 From your code editor open a terminal and enter `node index.js`. This will run the program.  Fill out all the following prompts and at the end you will be asked to confirm your choices. If you made a mistake enter `n` and you will be taken back to the beginning to make any corrections. Once you confirm all your choices, the console will print `README1.md had been created`. Your readme has been created! to make it your default delete your old README.md and and delete the '1' from your generated README.
 
 ### NOTE:
