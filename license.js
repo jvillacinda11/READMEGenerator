@@ -32,13 +32,10 @@ const licenseLinks = (license) => {
   }
   return licenseLink
 }
-const f = () => {
-  console.log('it works!')
-}
+
 
 
 module.exports = {
-licenseBadges,
-licenseLinks,
-f
+  licenseBadges,
+  licenseLinks
 };

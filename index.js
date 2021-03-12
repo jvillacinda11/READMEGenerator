@@ -13,17 +13,12 @@ const go = function () {
     {
       type: 'input',
       name: 'projectTitle',
-      message: 'Enter your project title...'
+      message: 'Enter your project title.'
     },
     {
       type: 'input',
       name: 'description',
       message: 'Give a description of your project.'
-    },
-    {
-      type: 'input',
-      name: 'solve',
-      message: 'What problem does your project solve?'
     },
     {
       type: 'input',
@@ -33,32 +28,57 @@ const go = function () {
     {
       type: 'input',
       name: 'gif',
-      message: 'Enter your gif location.'
+      message: 'Enter your location for your demo gif.'
+    },
+    {
+      type: 'input',
+      name: 'test',
+      message: 'Explain the tests you made for your projects.'
+    },
+    {
+      type: 'input',
+      name: 'usage',
+      message: 'Enter instructions for how to use project.'
+    },
+    {
+      type: 'input',
+      name: 'contribute',
+      message: 'How may people contribute to your project?'
     },
     {
       type: 'list',
       name: 'license',
       choices: ['MIT', 'Apache2.0', 'The Unlicensed', 'ZLib']
-
+    },
+    {
+      type: 'input',
+      name: 'email',
+      message: 'Enter your email...'
+    },
+    {
+      type: 'input',
+      name: 'github',
+      message: 'Enter your github username.'
+    },
+    {
+      type: 'input',
+      name: 'repo',
+      message: 'Enter your project repository name'
     },
     {
       type: 'confirm',
       name: 'choice',
-      message: 'Are you sure that you want changes to be saved to your README?'
+      message: 'Are you sure that you want this information to be saved to your README?'
     }
   ])
     .then(res => {
       if (res.choice) {
-        console.log(res)
         licenseBadge = license.licenseBadges(res.license)
-        console.log(licenseBadge)
         licenseLink = license.licenseLinks(res.license)
-        console.log(licenseLink)
         md = fillout(res, licenseBadge, licenseLink)
-        console.log(md)
-        fs.writeFile('readmetest.md', md, function (err) {
+        fs.writeFile('README1.md', md, function (err) {
           if (err) return console.log(err);
-          console.log('it works!');
+          console.log('README1.md has been created');
         })
 
       }

@@ -21,17 +21,24 @@ To install this app first clone the repository from this page. This app does req
 
 ## Usage
 ![](./test.gif)
+From your code editor open a terminal and enter `node index.js`. This will run the program.  Fill out all the following prompts and at the end you will be asked to confirm your choices. If you made a mistake enter `n` and you will be taken back to the beginning to make any corrections. Once you confirm all your choices, the console will print `README1.md had been created`. Your readme has been created! to make it your default delete your old README.md and and delete the '1' from your generated README.
+
+### NOTE:
+
+Please make sure your repository is made public or else a badge will not work.
 
 ## License
 [MIT](https://opensource.org/licenses/MIT)
 
 ## Contributing
 
-Help out by sumbitting a new [issue](https://github.com/jvillacinda11/READMEGenerator/issues)
+Help out by sumbitting a new [issue](https://github.com/jvillacinda11/READMEGenerator/issues).
 
 ## Tests
 
 
 ## Questions
 
-Feel free to reach out to me via email or on discord.
+Feel free to reach out to me via email: josevillacindafullcollacc@gmail.com
+
+My Github is [jvillacinda11](https://github.com/jvillacinda11)
