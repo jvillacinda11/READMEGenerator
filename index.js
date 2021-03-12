@@ -13,7 +13,12 @@ const go = function () {
     {
       type: 'input',
       name: 'description',
-      message: 'Give a description of your project'
+      message: 'Give a description of your project.'
+    },
+    {
+      type: 'input',
+      name: 'solve',
+      message: 'What problem does your project solve?'
     },
     {
       type: 'input',
@@ -22,8 +27,11 @@ const go = function () {
     },
     {
       type: 'input',
-      name: 'usage',
-      message: 'How may people use your product?'
+      name: 'gif',
+      message: 'Enter your gif location.'
+    },
+    {
+
     },
     {
       type: 'list',
@@ -73,6 +81,8 @@ const licenseLink = (license) => {
 const fillout = () =>{
 let md = `
 # ${res.projectTitle}
+
+
 
 
 
